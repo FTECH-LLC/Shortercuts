@@ -1,0 +1,24 @@
+name: Action Request
+description: Request a new shortcut action
+labels: ['actions']
+type: feature-request
+body:
+- type: textarea
+  id: concept
+  attributes:
+    label: Action Request
+    description: What's the general concept of the action?
+  validations:
+    required: true
+- type: textarea
+  id: concept-input
+  attributes:
+    label: Action Parameters
+    description: List all the expected input requirements
+  validations:
+    required: true
+- type: textarea
+  id: example-shortcut
+  attributes:
+    label: Shortcut Example
+    description: Provide a shortcut example and how this shortcut can be used
